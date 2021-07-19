@@ -1,0 +1,29 @@
+@keyframes movimiento {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.movimiento {
+  animation-name: movimiento, borde;
+  animation-duration: 100ms;
+  animation-fill-mode: both, none;
+  animation-delay: 1s;
+  font-family: inherit;
+}
+
+span {
+  opacity: 0;
+}
+
+@keyframes borde {
+  from {
+    border-right: 0;
+  }
+  to {
+    border-right: 5px solid gray;
+  }
+}
